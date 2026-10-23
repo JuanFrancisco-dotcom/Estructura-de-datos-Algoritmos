@@ -1,0 +1,87 @@
+================================================================
+REPORTE FINAL - COMPARACION DE ALGORITMOS DE ORDENAMIENTO
+================================================================
+
+Archivos y hardware usados:
+- C++ (resultados_cpp_completo.csv, 135 resultados validos): i5-1035G4 | 12 GB | Windows 11 | g++ 16.2.0 -O2 -std=c++17
+- Python (resultados_python.csv, 117 resultados validos): i5-1035G4 | 12 GB | Windows 11 | Python 3.12.10
+- C# (resultados_csharp.csv, 135 resultados validos): i5-1035G4 | 12 GB | Windows 11 | .NET 10.0.13
+- Java (resultados_java.csv, 135 resultados validos): i5-1035G4 | 12 GB | Windows 11 | Java 26.0.2.1
+- JavaScript (resultados_javascript.csv, 126 resultados validos): i5-1035G4 | 12 GB | Windows 11 | Node.js v24.22.1
+
+----------------------------------------------------------------
+1) LENGUAJE MAS RAPIDO
+----------------------------------------------------------------
+Solo se comparan los casos que todos los lenguajes ejecutaron (117 casos).
+
+Todos los casos (117 casos)
+Lenguaje     Tiempo total (s) Veces mas lento (prom.)  Victorias
+C++                      2.10                   1.06x         99
+Java                     2.34                   3.68x          6
+C#                       2.56                   4.06x          8
+JavaScript               3.90                   5.38x          4
+Python                 122.68                  53.51x          0
+
+Solo arreglos grandes (n >= 100000) (36 casos)
+Lenguaje     Tiempo total (s) Veces mas lento (prom.)  Victorias
+C++                      1.40                   1.12x         24
+C#                       1.39                   1.34x          7
+Java                     1.43                   1.35x          5
+JavaScript               2.56                   2.62x          0
+Python                  76.56                  69.81x          0
+
+>>> Lenguaje mas rapido en general: C++
+>>> Lenguaje mas rapido con arreglos grandes: C++
+
+----------------------------------------------------------------
+2) ALGORITMO MAS RAPIDO
+----------------------------------------------------------------
+
+Ranking general (9 escenarios donde corrieron los 9 algoritmos en todos los lenguajes)
+Algoritmo  Tiempo total (s) Veces mas lento (prom.)  Victorias
+Bucket                 0.05                   3.58x         12
+Shell                  0.10                   3.84x          9
+Radix                  0.06                   5.35x          1
+Heap                   0.15                   5.70x          2
+Merge                  0.11                   8.23x          0
+Insertion              9.82                   8.38x          3
+Bubble                16.34                  11.47x         13
+Quick                 13.13                  31.43x          5
+Selection             10.47                  72.77x          0
+
+>>> Algoritmo mas rapido en general: Bucket
+
+Algoritmo mas rapido por escenario (tiempo promedio entre lenguajes):
+n          tipo       ganador       tiempo (ms)   2.o lugar
+100        aleatorio  Shell              0.1170   Quick
+100        ordenado   Bubble             0.0033   Insertion
+100        inverso    Shell              0.0600   Heap
+1000       aleatorio  Quick              0.4617   Radix
+1000       ordenado   Bubble             0.0329   Insertion
+1000       inverso    Bucket             0.2225   Radix
+10000      aleatorio  Bucket             3.7351   Radix
+10000      ordenado   Bubble             0.1848   Insertion
+10000      inverso    Bucket             2.1568   Radix
+100000     aleatorio  Bucket            23.7231   Radix  (entre los que se ejecutaron)
+100000     ordenado   Bubble             2.3542   Insertion  (entre los que se ejecutaron)
+100000     inverso    Bucket            21.7380   Radix  (entre los que se ejecutaron)
+1000000    aleatorio  Bucket           420.5814   Radix  (entre los que se ejecutaron)
+1000000    ordenado   Bubble            45.7280   Insertion  (entre los que se ejecutaron)
+1000000    inverso    Bucket           367.2868   Radix  (entre los que se ejecutaron)
+
+----------------------------------------------------------------
+3) COMPARACIONES E INTERCAMBIOS (iguales en todos los lenguajes)
+----------------------------------------------------------------
+Suma sobre los 9 escenarios donde corrieron los 9 algoritmos.
+Algoritmo         Comparaciones         Intercambios
+Radix                         0              199,800
+Bucket                   14,967               81,535
+Merge                   274,021              432,792
+Shell                   583,628              343,618
+Heap                    759,729              401,504
+Insertion            76,144,542           76,144,492
+Quick               100,957,202           75,679,731
+Bubble              101,007,849           76,122,328
+Selection           151,498,350               16,652
+Nota: en Radix las comparaciones son 0 porque no compara elementos.
+Intercambios = swaps (Bubble, Selection, Quick, Heap) o movimientos de elementos (los demas).

@@ -1,0 +1,15 @@
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\bin\Release\net10.0\BenchmarkCS.exe
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\bin\Release\net10.0\BenchmarkCS.deps.json
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\bin\Release\net10.0\BenchmarkCS.runtimeconfig.json
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\bin\Release\net10.0\BenchmarkCS.dll
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\bin\Release\net10.0\BenchmarkCS.pdb
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.sourcelink.json
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.dll
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\refint\BenchmarkCS.dll
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.pdb
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\BenchmarkCS.genruntimeconfig.cache
+C:\Users\LENOVO\Documents\Algoritmos\BenchmarkCS\obj\Release\net10.0\ref\BenchmarkCS.dll
